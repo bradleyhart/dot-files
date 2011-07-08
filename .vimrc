@@ -26,8 +26,9 @@ set ignorecase " Ignore case when searching
 set smartcase " Make searches case sensitive only if they contain uppercase stuff
 
 
-" Change the leader from \ to , for easier reaching
+" Change the leader from \ to <space> for easier reaching
 let mapleader = " "
+nnoremap ; :
 
 set number
 
@@ -51,7 +52,7 @@ let MRU_Window_Height = 16
 let MRU_Max_Menu_Entries = 16
 let MRU_Max_Submenu_Entries = 16
 nnoremap <leader><space> :MRU<cr>
-
+nnoremap <Nul> :FufFile<cr>
 nnoremap <leader><cr> :NERDTreeToggle<cr>
 
 nmap <silent> <A-Up> :wincmd k<CR>
@@ -59,5 +60,5 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
-nnoremap <A-q> :q<CR>
-nnoremap <A-s> :w<CR>
+nmap <silent> <C-q> :q<CR>
+nmap <silent> <C-s> :w<CR>
