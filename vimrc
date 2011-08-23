@@ -2,6 +2,13 @@
 " Set filetype detection on, load plugins and indent.
 filetype plugin indent on
 
+" Folding
+set foldmethod=indent
+set foldlevelstart=20 " Start with all open
+nmap <C-z> za
+imap <C-z> <ESC><C-z>
+
+
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
 set tabstop=2 " Number of spaces to use for tabs.
@@ -25,6 +32,7 @@ set ignorecase " Ignore case when searching
 set smartcase " Make searches case sensitive only if they contain uppercase stuff
 
 set number
+nmap <F5> :set number! number?<cr>
 
 " Backup.
 set nobackup " Don't backup files.
@@ -54,15 +62,20 @@ nnoremap <leader>e  <C-w><C-v><C-l>:e $VIMRC_FILE<cr>
 let MRU_Window_Height = 16
 let MRU_Max_Menu_Entries = 16
 let MRU_Max_Submenu_Entries = 16
-nnoremap <leader><space> :MRU<cr>
+nnoremap <F3> :MRU<cr>
 
 " Fuffly finder setting
 "nnoremap <Nul> :FufFile<cr>
 
 " NerdTree seetings
 nnoremap <F2> :NERDTreeToggle<cr>
-map <F4> <leader>c<space>
-nnoremap <F5> gg=G
+
+map <C-c> <leader>c<space>
+
+" Format the file
+nmap <C-f> mtgg=G't
+imap <C-f> <ESC><C-f>
+"nnoremap <F5> gg=G
 
 " Move windows with arrows
 nmap <silent> <A-Up> :wincmd k<CR>
@@ -70,27 +83,13 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
-
-" CTRL-X and SHIFT-Del are Cut
-vnoremap <C-X> "+x
-
-" CTRL-C and CTRL-Insert are Copy
-vnoremap <C-C> "+y
-"
-" CTRL-V and SHIFT-Insert are Paste
-map <C-V>   "+gP
-cmap <C-V>    <C-R>+
-
-nnoremap ss :w<CR>
-nnoremap sss :w!<CR>
-
-nnoremap qq :q<CR>
-nnoremap qqq :q!<CR>
+nnoremap <F9> :w<CR>
+nnoremap <F12> :q<CR>
 
 " Use CTRL-S for saving, also in Insert mode
-noremap <C-S>   :w<CR>
-vnoremap <C-S>    <C-C>:w<CR>
-inoremap <C-S>    <C-O>:w<CR>
+noremap <C-s>   :w<CR>
+vnoremap <C-s>    <C-C>:w<CR>
+inoremap <C-s>    <C-O>:w<CR>
 
 nnoremap <silent><Nul> :startinsert<CR>
 inoremap <silent><Nul> <C-O>:stopinsert<CR>
