@@ -1,6 +1,9 @@
 
-" Set filetype detection on, load plugins and indent.
+syntax on
 filetype plugin indent on
+
+set t_Co=256
+colorscheme idleFingers
 
 " Folding
 set foldmethod=indent
@@ -23,7 +26,6 @@ set showmatch " Show matching parents.
 set splitright " Open new vertical split windows to the right of the current one, not the left.
 set splitbelow " See above description. Opens new windows below, not above.
 
-colorscheme wombat256mod
 
 " Searching.
 set hlsearch " Highlight search terms
