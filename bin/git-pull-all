@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_dir=${PWD}
+for f in *
+do
+    cd $f
+    echo "GIT PULL: "$f
+    git pull
+    cd $current_dir
+done
+cd $current_dir

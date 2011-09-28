@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cat $1 | while read line
+do
+   output_file=$2/reactor-`basename $line`.txt
+   echo $output_file
+   mvn clean install -am -pl $line > $output_file
+done

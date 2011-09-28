@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for f in $1/reactor-*
+do
+   echo "Reactor $f" >> $2
+   sed -n -e '/Reactor Summary:/,/BUILD SUCCESSFUL/p' $f >> $2
+done

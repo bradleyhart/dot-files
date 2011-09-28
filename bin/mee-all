@@ -1,0 +1,12 @@
+#!/bin/bash
+
+current_dir=${PWD}
+for f in *
+do
+    echo -e "mvn eclipse:clean eclipse:eclipse [$f]"
+    cd $f
+    mvn eclipse:clean eclipse:eclipse | egrep " BUILD "
+    echo -e "done [$f]"
+    cd $current_dir
+done
+cd $current_dir

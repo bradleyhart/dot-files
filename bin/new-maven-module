@@ -1,0 +1,8 @@
+#!/bin/bash
+
+current_dir=${PWD}
+module_name=$1
+cp -r /home/agile/dev/wps/templates/module-template .
+mv module-template $module_name
+sed -i "s/TEMPLATE_MODULE/$module_name/" $module_name/pom.xml
+cd $current_dir

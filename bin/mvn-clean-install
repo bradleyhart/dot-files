@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_dir=${PWD}
+for f in $1/*
+do
+    echo -e "mvn clean install [$f]"
+    cd $f
+    mvn clean install
+    cd $current_dir
+done
+cd $current_dir

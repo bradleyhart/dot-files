@@ -1,0 +1,12 @@
+#!/bin/bash
+
+current_dir=${PWD}
+for f in *
+do
+    echo -e "mvn clean install -Pintegration [$f]"
+    cd $f
+    mvn clean install -Pintegration | egrep " BUILD "
+    echo -e "done [$f]"
+    cd $current_dir
+done
+cd $current_dir

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_dir=${PWD}
+for f in *
+do
+    echo "GIT TAGS: " $f
+    cd $f
+    git tag | egrep "2.0"
+    cd $current_dir
+done
+cd $current_dir

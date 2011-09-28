@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# changes
+#
+# Outputs the change history of a given file as a sequence of logentry/diff pairs.
+
+default_limit=5
+
+function changes() {
+    url=$1 # url of file
+    limit=$2 # limit the number of diffs
+    svn log -q $url -l $limit | grep -E -e "^r[[:digit:]]+" -o | cut -c2- | sort -n -r | {
+
+        while read r
+        do
+echo
+svn log -r$r $url@HEAD
+            svn diff -c$r $url@HEAD
+            echo
+done
+    }
+}
+
+changes $1 ${2:-$default_limit}

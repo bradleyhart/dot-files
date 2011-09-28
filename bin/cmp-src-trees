@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Compare two svn source trees
+
+IGNORABLES=".svn bin target .classpath .settings .project"
+
+compareTrees() {
+    echo
+    echo "### cmp \"$1\" to \"$2\""
+    local wd=$PWD
+    cd $1
+    for i in `find . \( -name ".svn" -o -name "bin" -o -name "target" -o -name ".classpath" -o -name ".settings" -o -name ".project" \) -prune -o -type f |grep -v "\(.svn\|bin\|target\|.classpath\|.settings\|.project\)"`
+    do
+	cmp $i $2/$i
+    done
+    cd $wd
+}
+
+if [ $# -lt 2 ]
+then
+    echo
+    echo "Usage: `basename $0` dir1 dir2"
+    exit 1
+fi
+
+compareTrees $1 $2
+compareTrees $2 $1
