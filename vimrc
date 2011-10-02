@@ -1,7 +1,13 @@
+" VIM Configuration
+" =================
+" author: Philip Gloyne
+" email: philip.gloyne@gmail.com
 
+" File types
 syntax on
 filetype plugin indent on
 
+" Color settings
 set t_Co=256
 colorscheme idleFingers
 
@@ -11,32 +17,32 @@ set foldlevelstart=20 " Start with all open
 nmap <C-z> za
 imap <C-z> <ESC><C-z>
 
-
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
 set tabstop=2 " Number of spaces to use for tabs.
 set shiftwidth=2 " Number of spaces to autoindent.
 set softtabstop=2 " Number of spaces for a tab.
 set autoindent " Set autoindenting on.
-" nothing
+
 " Use matchtime and showmatch together.
 set matchtime=2 " Time to show matching parent in 10ths of a sec.
 set showmatch " Show matching parents.
 
+" Windows
 set splitright " Open new vertical split windows to the right of the current one, not the left.
 set splitbelow " See above description. Opens new windows below, not above.
 
-
-" Searching.
+" Searching
 set hlsearch " Highlight search terms
 set incsearch " Show search matches as you type
 set ignorecase " Ignore case when searching
 set smartcase " Make searches case sensitive only if they contain uppercase stuff
 
+" Line numbers
 set number
 nmap <F5> :set number! number?<cr>
 
-" Backup.
+" Backup
 set nobackup " Don't backup files.
 set nowritebackup
 set noswapfile
@@ -47,6 +53,8 @@ setlocal completefunc=javacomplete#CompleteParamsInfo
 
 " Change the leader from \ to <space> for easier reaching
 let mapleader = " "
+
+" use semicolon as a colon
 nnoremap ; :
 
 " Bubble single lines
@@ -69,9 +77,10 @@ nnoremap <F3> :MRU<cr>
 " Fuffly finder setting
 "nnoremap <Nul> :FufFile<cr>
 
-" NerdTree seetings
+" NerdTree settings
 nnoremap <F2> :NERDTreeToggle<cr>
 
+" NerdComment 
 map <C-c> <leader>c<space>
 
 " Format the file
@@ -85,7 +94,8 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
-nnoremap <F9> :w<CR>
+" Quick write and quit
+nnoremap <F11> :w<CR>
 nnoremap <F12> :q<CR>
 
 " Use CTRL-S for saving, also in Insert mode
