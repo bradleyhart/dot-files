@@ -9,7 +9,7 @@ filetype plugin indent on
 
 " Color settings
 set t_Co=256
-colorscheme idleFingers
+colorscheme wombat256mod
 
 " Folding
 set foldmethod=indent
