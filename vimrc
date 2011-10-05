@@ -108,4 +108,4 @@ inoremap <C-s>    <C-O>:w<CR>
 nnoremap <silent><Nul> :startinsert<CR>
 inoremap <silent><Nul> <C-O>:stopinsert<CR>
 
-map <C-R> <leader>t
+map <C-r> <leader>t
