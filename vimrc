@@ -23,6 +23,8 @@ set tabstop=2 " Number of spaces to use for tabs.
 set shiftwidth=2 " Number of spaces to autoindent.
 set softtabstop=2 " Number of spaces for a tab.
 set autoindent " Set autoindenting on.
+set list
+set listchars=tab:→\ ,eol:¬
 
 " Use matchtime and showmatch together.
 set matchtime=2 " Time to show matching parent in 10ths of a sec.
@@ -105,3 +107,4 @@ inoremap <C-s>    <C-O>:w<CR>
 
 nnoremap <silent><Nul> :startinsert<CR>
 inoremap <silent><Nul> <C-O>:stopinsert<CR>
+
