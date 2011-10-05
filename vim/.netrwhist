@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/philipgloyne/dev/ruby/workspaces/heroku/philipgloyne'
 let g:netrw_dirhist_2='/Users/philipgloyne/dev/ruby'
 let g:netrw_dirhist_3='/home/agile/dev/wps/dev_TECHTRACK/online-library-projects/online_library/web-application/b4-target/logs'
 let g:netrw_dirhist_4='/home/agile/dev/wps/dev_TECHTRACK/online-library-projects/online_library/web-application'
 let g:netrw_dirhist_5='/home/agile/dev/wps/spike/testdata-spike/testdata-spike-submodule-1'
+let g:netrw_dirhist_6='/home/agile/dev/wps/dev_TECHTRACK/online-library-projects/common-and-core/online-library-core'
+let g:netrw_dirhist_7='/home/agile/dev/wps/dev_TECHTRACK/online-library-projects/common-and-core'
