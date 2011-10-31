@@ -4,6 +4,9 @@
 " email: philip.gloyne@gmail.com
 
 " File types
+set nocompatible
+set backspace=2
+
 syntax on
 filetype plugin indent on
 
@@ -43,6 +46,8 @@ set smartcase " Make searches case sensitive only if they contain uppercase stuf
 " Line numbers
 set number
 nmap <F5> :set number! number?<cr>
+nmap <F6> :set list! list?<cr>
+nmap <F7> :VimroomToggle<cr>
 
 " Backup
 set nobackup " Don't backup files.
