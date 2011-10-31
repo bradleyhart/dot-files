@@ -6,6 +6,7 @@
 *.netrwhist
 *.VimballRecord
 Makefile
+vim/.netrwhist
 
 
 # Compiled source #
