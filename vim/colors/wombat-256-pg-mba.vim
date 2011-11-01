@@ -16,7 +16,7 @@ if version > 580
     endif
 endif
 
-let colors_name = "wombat256mod"
+let colors_name = "wombat-256-pg-mba"
 
 
 " General colors
