@@ -44,10 +44,10 @@ if version >= 700
 endif
 
 " Diff highlighting
-hi DiffAdd  ctermfg=167 ctermbg=17	cterm=none  guifg=#242424 guibg=#2a0d6a gui=none
-hi DiffDelete ctermfg=167	ctermbg=60  cterm=none  guifg=#242424 guibg=#3e3969 gui=none
-hi DiffText ctermfg=167 ctermbg=53	cterm=none  guifg=#242424 guibg=#73186e gui=none
-hi DiffChange ctermfg=167 ctermbg=60	cterm=none	guifg=#242424 guibg=#382a37 gui=none
+hi DiffAdd  ctermfg=green ctermbg=none	cterm=none  guifg=#242424 guibg=#2a0d6a gui=none
+hi DiffDelete ctermfg=red	ctermbg=none  cterm=none  guifg=#242424 guibg=#3e3969 gui=none
+hi DiffText ctermfg=blue ctermbg=none	cterm=none  guifg=#242424 guibg=#73186e gui=none
+hi DiffChange ctermfg=none ctermbg=none	cterm=none	guifg=#242424 guibg=#382a37 gui=none
 
 
 "hi CursorIM
@@ -88,17 +88,8 @@ hi String		ctermfg=113		cterm=none		guifg=#95e454	gui=italic
 hi Comment		ctermfg=241		cterm=none		guifg=#9c998e	gui=italic
 hi Todo			ctermfg=101		cterm=none		guifg=#857b6f	gui=italic
 
-" Diff highlighting
-hi DiffAdd  ctermfg=167 ctermbg=17	cterm=none  guifg=#242424 guibg=#2a0d6a gui=none
-hi DiffDelete ctermfg=167	ctermbg=60  cterm=none  guifg=#242424 guibg=#3e3969 gui=none
-hi DiffText ctermfg=167 ctermbg=53	cterm=none  guifg=#242424 guibg=#73186e gui=none
-hi DiffChange ctermfg=167 ctermbg=60	cterm=none	guifg=#242424 guibg=#382a37 gui=none
-
-
-
 " Links
 hi! link FoldColumn		Folded
 hi! link CursorColumn	CursorLine
 hi! link NonText		LineNr
 
-" vim:set ts=4 sw=4 noet:
