@@ -3,6 +3,8 @@
 " author: Philip Gloyne
 " email: philip.gloyne@gmail.com
 
+call pathogen#infect()
+
 " File types
 set nocompatible
 set backspace=2
@@ -12,7 +14,7 @@ filetype plugin indent on
 
 " Color settings
 set t_Co=256
-colorscheme wombat-256-pg-mba
+colorscheme wombat256mod
 
 " Folding
 set foldmethod=indent

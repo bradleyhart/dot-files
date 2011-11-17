@@ -1,0 +1,30 @@
+[submodule "vim/bundle/yankring"]
+	path = vim/bundle/yankring
+	url = git://github.com/vim-scripts/YankRing.vim.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "vim/bundle/mru"]
+	path = vim/bundle/mru
+	url = git://github.com/vim-scripts/mru.vim.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/xml"]
+	path = vim/bundle/xml
+	url = git://github.com/othree/xml.vim.git
+[submodule "vim/bundle/xterm-color-table"]
+	path = vim/bundle/xterm-color-table
+	url = git://github.com/guns/xterm-color-table.vim.git
+[submodule "vim/bundle/vimroom"]
+	path = vim/bundle/vimroom
+	url = git://github.com/mikewest/vimroom.git
