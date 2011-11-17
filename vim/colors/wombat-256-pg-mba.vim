@@ -44,10 +44,10 @@ if version >= 700
 endif
 
 " Diff highlighting
-hi DiffAdd  ctermfg=167 ctermbg=17  cterm=none  guifg=#242424 guibg=#2a0d6a gui=none
-hi DiffDelete ctermfg=167   ctermbg=60  cterm=none  guifg=#242424 guibg=#3e3969 gui=none
-hi DiffText ctermfg=167 ctermbg=53  cterm=none  guifg=#242424 guibg=#73186e gui=none
-hi DiffChange ctermfg=167 ctermbg=60    cterm=none  guifg=#242424 guibg=#382a37 gui=none
+hi DiffAdd  ctermfg=15 ctermbg=16  cterm=none  guifg=#242424 guibg=#2a0d6a gui=none
+hi DiffDelete ctermfg=15   ctermbg=88  cterm=none  guifg=#242424 guibg=#3e3969 gui=none
+hi DiffText ctermfg=15 ctermbg=none  cterm=none  guifg=#242424 guibg=#73186e gui=none
+hi DiffChange ctermfg=15 ctermbg=52    cterm=none  guifg=#242424 guibg=#382a37 gui=none
 
 
 "hi CursorIM
@@ -87,14 +87,6 @@ hi Special      ctermfg=229     cterm=none      guifg=#eadead   gui=none
 hi String       ctermfg=113     cterm=none      guifg=#95e454   gui=italic
 hi Comment      ctermfg=241     cterm=none      guifg=#9c998e   gui=italic
 hi Todo         ctermfg=101     cterm=none      guifg=#857b6f   gui=italic
-
-" Diff highlighting
-hi DiffAdd  ctermfg=167 ctermbg=17  cterm=none  guifg=#242424 guibg=#2a0d6a gui=none
-hi DiffDelete ctermfg=167   ctermbg=60  cterm=none  guifg=#242424 guibg=#3e3969 gui=none
-hi DiffText ctermfg=167 ctermbg=53  cterm=none  guifg=#242424 guibg=#73186e gui=none
-hi DiffChange ctermfg=167 ctermbg=60    cterm=none  guifg=#242424 guibg=#382a37 gui=none
-
-
 
 " Links
 hi! link FoldColumn     Folded

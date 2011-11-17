@@ -1,4 +1,6 @@
 
+export PATH=/usr/local/bin:$PATH
+
 export TERM=xterm
 
 export PS1="\\W\\n• ";
