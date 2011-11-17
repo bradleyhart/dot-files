@@ -8,3 +8,12 @@ Clone this repository, change into the cloned directory, and run:
 
 This will create symlinks for all config files in your home directory. You can
 safely run this file multiple times to update.
+
+h3. GIT Submodules
+
+Run:
+<pre>
+git submodule init ; git submodule update 
+</pre>
+To install all vim plug-ins.
+
