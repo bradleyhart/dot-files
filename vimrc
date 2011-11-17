@@ -3,6 +3,8 @@
 " author: Philip Gloyne
 " email: philip.gloyne@gmail.com
 
+call pathogen#infect()
+
 " File types
 set nocompatible
 set backspace=2
