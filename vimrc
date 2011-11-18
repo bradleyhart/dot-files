@@ -103,6 +103,12 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" YankRing
+nmap <leader>p :YRShow<CR>
+
+" Scratch
+nmap <leader><tab> :Sscratch<CR><C-w><C-l>
+"
 " Quick write and quit
 nnoremap <F11> :w<CR>
 nnoremap <F12> :q<CR>
