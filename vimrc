@@ -61,7 +61,7 @@ set fileformat=unix
 setlocal completefunc=javacomplete#CompleteParamsInfo
 
 " Change the leader from \ to <space> for easier reaching
-let mapleader = " "
+let mapleader = "'"
 
 " use semicolon as a colon
 nnoremap ; :
@@ -86,8 +86,10 @@ nnoremap <F3> :MRU<cr>
 " Fuffly finder setting
 "nnoremap <Nul> :FufFile<cr>
 
+nnoremap <F2> :bp<cr>
+
 " NerdTree settings
-nnoremap <F2> :NERDTreeToggle<cr>
+nnoremap <F4> :NERDTreeToggle<cr>
 
 " NerdComment 
 map <C-c> <leader>c<space>
