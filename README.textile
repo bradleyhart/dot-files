@@ -11,9 +11,14 @@ safely run this file multiple times to update.
 
 h3. GIT Submodules
 
-Run:
 <pre>
 git submodule init ; git submodule update 
 </pre>
 To install all vim plug-ins.
 
+h3. Build command-t
+
+<pre>
+cd ~/vim/bundle/command-t
+rake make
+</pre>
