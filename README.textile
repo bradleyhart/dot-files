@@ -19,6 +19,6 @@ To install all vim plug-ins.
 h3. Build command-t
 
 <pre>
-cd ~/vim/bundle/command-t
+cd ~/.vim/bundle/command-t
 rake make
 </pre>
