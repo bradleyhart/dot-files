@@ -47,9 +47,9 @@ set smartcase " Make searches case sensitive only if they contain uppercase stuf
 
 " Line numbers
 set number
-nmap <F5> :set number! number?<cr>
-nmap <F6> :set list! list?<cr>
-nmap <F7> :VimroomToggle<cr>
+nnoremap <F5> :GundoToggle<CR>
+nnoremap <F6> :set number! number?<cr>
+nmap <F7> :set list! list?<cr>
 
 " Backup
 set nobackup " Don't backup files.
@@ -77,16 +77,14 @@ vmap <C-Down> xp`[V`]
 " shortcut to this file
 nnoremap <leader>e  <C-w><C-v><C-l>:e $VIMRC_FILE<cr>
 
+" Move to previous buffer
+nnoremap <F2> :bp<cr>
+
 " Most Recently Used settings
 let MRU_Window_Height = 16
 let MRU_Max_Menu_Entries = 16
 let MRU_Max_Submenu_Entries = 16
 nnoremap <F3> :MRU<cr>
-
-" Fuffly finder setting
-"nnoremap <Nul> :FufFile<cr>
-
-nnoremap <F2> :bp<cr>
 
 " NerdTree settings
 nnoremap <F4> :NERDTreeToggle<cr>
@@ -95,7 +93,7 @@ nnoremap <F4> :NERDTreeToggle<cr>
 map <C-c> <leader>c<space>
 
 " Format the file
-nmap <C-f> mtgg=G't
+nnoremap <C-f> mtgg=G't
 imap <C-f> <ESC><C-f>
 "nnoremap <F5> gg=G
 
