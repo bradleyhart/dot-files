@@ -12,7 +12,7 @@ export VIMRC_FILE="~/.vimrc";
 
 parse_git_branch ()
 {
-  git name-rev HEAD 2> /dev/null | sed 's#HEAD\ \(.*\)#(git:\1)#'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(git:\1)/'
 }
 parse_svn_branch() {
   parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk -F / '{print "(svn:"$3"/"$4")"}'
