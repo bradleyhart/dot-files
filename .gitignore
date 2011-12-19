@@ -8,6 +8,7 @@
 Makefile
 vim/.netrwhist
 vim/bundle/xml/*
+vim/bundle/xml/doc
 
 # Compiled source #
 ###################
