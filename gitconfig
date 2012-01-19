@@ -1,0 +1,25 @@
+
+[alias]
+  co = checkout
+  st = status
+# Log display from screencast, with train tracks.
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(bold)%an (%ar)%Creset'
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+  track = checkout -t
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[user]
+  name = Philip Gloyne
+  email = philip.gloyne@gmail.com
+[help]
+  autocorrect = 1
+[merge]
+  tool = diffmerge
+[mergetool "diffmerge"]
+  cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+  trustExitCode = true
