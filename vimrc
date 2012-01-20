@@ -80,12 +80,6 @@ nnoremap <leader>e  <C-w><C-v><C-l>:e $VIMRC_FILE<cr>
 " Move to previous buffer
 nnoremap <F2> :bp<cr>
 
-" Most Recently Used settings
-let MRU_Window_Height = 16
-let MRU_Max_Menu_Entries = 16
-let MRU_Max_Submenu_Entries = 16
-nnoremap <F3> :MRU<cr>
-
 " NerdTree settings
 nnoremap <F4> :NERDTreeToggle<cr>
 
@@ -121,6 +115,10 @@ inoremap <C-s>    <C-O>:w<CR>
 nnoremap <silent><Nul> :startinsert<CR>
 inoremap <silent><Nul> <C-O>:stopinsert<CR>
 
-" Command t settings
-map <C-r> <leader>t
 :set wildignore+=*.o,*.obj,.git,.svn,*.class
+
+" CtrlP settings
+map <C-e> :CtrlPMRU<cr>
+map <C-r> :CtrlP<cr>
+let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp_search = 1
