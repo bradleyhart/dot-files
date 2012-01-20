@@ -117,8 +117,11 @@ inoremap <silent><Nul> <C-O>:stopinsert<CR>
 
 :set wildignore+=*.o,*.obj,.git,.svn,*.class
 
-" CtrlP settings
+" CtrlP
 map <C-e> :CtrlPMRU<cr>
 map <C-r> :CtrlP<cr>
-let g:ctrlp_by_filename = 1
 let g:ctrlp_regexp_search = 1
+
+" buftabs
+set laststatus=2
+:let g:buftabs_in_statusline=1
