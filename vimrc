@@ -106,6 +106,7 @@ nmap <leader><tab> :Sscratch<CR><C-w><C-l>
 " Quick write and quit
 nnoremap <F11> :w<CR>
 nnoremap <F12> :q<CR>
+nnoremap <C-F12> :q!<CR> 
 
 " Use CTRL-S for saving, also in Insert mode
 noremap <C-s>   :w<CR>
@@ -125,3 +126,4 @@ let g:ctrlp_regexp_search = 1
 " buftabs
 set laststatus=2
 :let g:buftabs_in_statusline=1
+
