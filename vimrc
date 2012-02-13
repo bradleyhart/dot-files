@@ -14,7 +14,7 @@ filetype plugin indent on
 
 " Color settings
 set t_Co=256
-colorscheme wombat-256-pg-mba
+colorscheme greyknight-256 
 
 " Folding
 set foldmethod=indent
@@ -28,7 +28,7 @@ set tabstop=2 " Number of spaces to use for tabs.
 set shiftwidth=2 " Number of spaces to autoindent.
 set softtabstop=2 " Number of spaces for a tab.
 set autoindent " Set autoindenting on.
-set list
+"set list
 set listchars=tab:→\ ,eol:¬
 
 " Use matchtime and showmatch together.
