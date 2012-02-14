@@ -34,7 +34,7 @@ hi SpecialChar guifg=#87af87 guibg=none guisp=none gui=none ctermfg=108 ctermbg=
 hi Conditional guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
 hi StorageClass guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
 hi Todo guifg=#00875f guibg=none guisp=none gui=none ctermfg=29 ctermbg=none cterm=none
-hi Special guifg=#87af87 guibg=none guisp=none gui=none ctermfg=108 ctermbg=none cterm=none
+hi Special guifg=#5faf5f guibg=none guisp=none gui=none ctermfg=71 ctermbg=none cterm=none
 hi LineNr guifg=#262626 guibg=#121212 guisp=#121212 gui=none ctermfg=235 ctermbg=233 cterm=none
 hi StatusLine guifg=#cccccc guibg=#222222 guisp=#222222 gui=italic ctermfg=252 ctermbg=235 cterm=none
 hi Normal guifg=#d0d0d0 guibg=#1c1c1c guisp=#1c1c1c gui=none ctermfg=252 ctermbg=234 cterm=none
@@ -48,10 +48,10 @@ hi Statement guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=no
 hi SpellRare guifg=#e2e4e5 guibg=none guisp=none gui=none ctermfg=254 ctermbg=none cterm=none
 hi EnumerationValue guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi Comment guifg=#999999 guibg=none guisp=none gui=italic ctermfg=246 ctermbg=none cterm=none
-hi Character guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
-hi Float guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
-hi Number guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
-hi Boolean guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
+hi Character guifg=#af5f87 guibg=none guisp=none gui=none ctermfg=132 ctermbg=none cterm=none
+hi Float guifg=#af5f87 guibg=none guisp=none gui=none ctermfg=132 ctermbg=none cterm=none
+hi Number guifg=#af5f87 guibg=none guisp=none gui=none ctermfg=132 ctermbg=none cterm=none
+hi Boolean guifg=#af5f87 guibg=none guisp=none gui=none ctermfg=132 ctermbg=none cterm=none
 hi Operator guifg=#626262 guibg=none guisp=none gui=none ctermfg=241 ctermbg=none cterm=none
 hi CursorLine guifg=none guibg=#32322f guisp=#32322f gui=none ctermfg=none ctermbg=236 cterm=none
 hi Union guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
@@ -83,7 +83,7 @@ hi SpecialKey guifg=#626262 guibg=#2b2b2b guisp=#2b2b2b gui=none ctermfg=241 cte
 hi Constant guifg=#626262 guibg=none guisp=none gui=none ctermfg=241 ctermbg=none cterm=none
 hi DefinedName guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi Tag guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
-hi String guifg=#87af87 guibg=none guisp=none gui=italic ctermfg=108 ctermbg=none cterm=none
+hi String guifg=#5faf5f guibg=none guisp=none gui=italic ctermfg=71 ctermbg=none cterm=none
 hi PMenuThumb guifg=none guibg=#857b6f guisp=#857b6f gui=none ctermfg=none ctermbg=101 cterm=none
 hi MatchParen guifg=#ffff5f guibg=#262626 guisp=#262626 gui=none ctermfg=227 ctermbg=235 cterm=none
 hi LocalVariable guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
