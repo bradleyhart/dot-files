@@ -29,7 +29,7 @@ hi ErrorMsg guifg=#ff5f5f guibg=#303030 guisp=#303030 gui=none ctermfg=203 cterm
 hi Ignore guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi Debug guifg=#e2e4e5 guibg=none guisp=none gui=none ctermfg=254 ctermbg=none cterm=none
 hi PMenuSbar guifg=none guibg=#080808 guisp=#080808 gui=none ctermfg=none ctermbg=232 cterm=none
-hi Identifier guifg=#af5f5f guibg=none guisp=none gui=none ctermfg=131 ctermbg=none cterm=none
+hi Identifier guifg=#d7875f guibg=none guisp=none gui=none ctermfg=173 ctermbg=none cterm=none
 hi SpecialChar guifg=#00875f guibg=none guisp=none gui=none ctermfg=29 ctermbg=none cterm=none
 hi Conditional guifg=#005f87 guibg=none guisp=none gui=none ctermfg=24 ctermbg=none cterm=none
 hi StorageClass guifg=#005f87 guibg=none guisp=none gui=none ctermfg=24 ctermbg=none cterm=none
@@ -52,7 +52,7 @@ hi Character guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=no
 hi Float guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
 hi Number guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
 hi Boolean guifg=#d75f87 guibg=none guisp=none gui=none ctermfg=168 ctermbg=none cterm=none
-hi Operator guifg=#008787 guibg=none guisp=none gui=none ctermfg=30 ctermbg=none cterm=none
+hi Operator guifg=#626262 guibg=none guisp=none gui=none ctermfg=241 ctermbg=none cterm=none
 hi CursorLine guifg=none guibg=#32322f guisp=#32322f gui=none ctermfg=none ctermbg=236 cterm=none
 hi Union guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi TabLineFill guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
