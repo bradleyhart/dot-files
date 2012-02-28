@@ -4,10 +4,20 @@
 " email: philip.gloyne@gmail.com
 
 call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
+"Powerline
+"let g:Powerline_symbols = 'unicode'
+"set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
+
+set fillchars+=stl:\ ,stlnc:\
+set laststatus=2
 " File types
+
 set nocompatible
 set backspace=2
+set encoding=utf-8
 
 syntax on
 filetype plugin indent on
@@ -124,6 +134,5 @@ map <C-r> :CtrlP<cr>
 let g:ctrlp_regexp_search = 1
 
 " buftabs
-set laststatus=2
-:let g:buftabs_in_statusline=1
+":let g:buftabs_in_statusline=1
 
