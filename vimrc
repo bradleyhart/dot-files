@@ -136,3 +136,8 @@ let g:ctrlp_regexp_search = 1
 " buftabs
 ":let g:buftabs_in_statusline=1
 
+" vimdiff
+nnoremap aa [c
+nnoremap zz ]c
+nnoremap [[ :diffget<CR>
+nnoremap ]] :diffput<CR>
