@@ -24,7 +24,7 @@ hi StatusLineNC guifg=#cccccc guibg=#222222 guisp=#222222 gui=none ctermfg=252 c
 hi CTagsMember guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi NonText guifg=#121212 guibg=#1c1c1c guisp=#1c1c1c gui=none ctermfg=233 ctermbg=234 cterm=none
 hi CTagsGlobalConstant guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
-hi DiffText guifg=#5f5faf guibg=#111111 guisp=#111111 gui=none ctermfg=61 ctermbg=233 cterm=none
+hi DiffText guifg=#5f5faf guibg=#111111 guisp=#111111 gui=none ctermfg=135 ctermbg=233 cterm=none
 hi ErrorMsg guifg=#ff5f5f guibg=#303030 guisp=#303030 gui=none ctermfg=203 ctermbg=236 cterm=none
 hi Ignore guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi Debug guifg=#e2e4e5 guibg=none guisp=none gui=none ctermfg=254 ctermbg=none cterm=none
@@ -59,7 +59,7 @@ hi TabLineFill guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=no
 hi Question guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi WarningMsg guifg=#cc3333 guibg=none guisp=none gui=none ctermfg=167 ctermbg=none cterm=none
 hi VisualNOS guifg=#c3c6ca guibg=#303030 guisp=#303030 gui=none ctermfg=251 ctermbg=236 cterm=none
-hi DiffDelete guifg=#af0000 guibg=#000000 guisp=#000000 gui=none ctermfg=124 ctermbg=none cterm=none
+hi DiffDelete guifg=#af0000 guibg=#000000 guisp=#000000 gui=none ctermfg=203 ctermbg=233 cterm=none
 hi ModeMsg guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi CursorColumn guifg=none guibg=#32322f guisp=#32322f gui=none ctermfg=none ctermbg=236 cterm=none
 hi Define guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
@@ -74,7 +74,7 @@ hi VertSplit guifg=#444444 guibg=#262626 guisp=#262626 gui=none ctermfg=238 cter
 hi Exception guifg=#af5f5f guibg=none guisp=none gui=none ctermfg=131 ctermbg=none cterm=none
 hi Keyword guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
 hi Type guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
-hi DiffChange guifg=#555555 guibg=#333333 guisp=#333333 gui=none ctermfg=240 ctermbg=236 cterm=none
+hi DiffChange guifg=#555555 guibg=#333333 guisp=#333333 gui=none ctermfg=240 ctermbg=233 cterm=none
 hi Cursor guifg=#080808 guibg=#aaaaaa guisp=#aaaaaa gui=none ctermfg=232 ctermbg=248 cterm=none
 hi SpellLocal guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 hi Error guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
@@ -94,6 +94,6 @@ hi Directory guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none
 hi Structure guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
 hi Macro guifg=#87afd7 guibg=none guisp=none gui=none ctermfg=110 ctermbg=none cterm=none
 hi Underlined guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
-hi DiffAdd guifg=#00d787 guibg=#000000 guisp=#000000 gui=none ctermfg=42 ctermbg=none cterm=none
+hi DiffAdd guifg=#00d787 guibg=#000000 guisp=#000000 gui=none ctermfg=42 ctermbg=233 cterm=none
 hi TabLine guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 
