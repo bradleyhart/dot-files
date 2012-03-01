@@ -97,3 +97,6 @@ hi Underlined guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=non
 hi DiffAdd guifg=#00d787 guibg=#000000 guisp=#000000 gui=none ctermfg=42 ctermbg=233 cterm=none
 hi TabLine guifg=none guibg=none guisp=none gui=none ctermfg=none ctermbg=none cterm=none
 
+" Java
+hi javaConstant guifg=#af5f87 guibg=none guisp=none gui=none ctermfg=132 ctermbg=none cterm=none
+hi javaAnnotation guifg=#999999 guibg=none guisp=none gui=none ctermfg=246 ctermbg=none cterm=none
