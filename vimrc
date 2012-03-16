@@ -139,8 +139,8 @@ let g:ctrlp_regexp_search = 1
 " vimdiff
 nnoremap aa [c
 nnoremap zz ]c
-nnoremap [[ :diffget<CR>
-nnoremap ]] :diffput<CR>
+nnoremap -- :diffget<CR>
+nnoremap == :diffput<CR>
 
 map <C-f> *<BAR>:execute "vimgrep /" . expand("<cword>") ."/j %" <Bar> cw<CR>
 map <C-h> *<BAR>:execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
