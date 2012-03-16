@@ -97,8 +97,8 @@ nnoremap <F4> :NERDTreeToggle<cr>
 map <C-c> <leader>c<space>
 
 " Format the file
-nnoremap <C-f> mtgg=G't
-imap <C-f> <ESC><C-f>
+nnoremap <C-l> mtgg=G't
+imap <C-l> <ESC><C-l>
 "nnoremap <F5> gg=G
 
 " Move windows with arrows
@@ -141,3 +141,6 @@ nnoremap aa [c
 nnoremap zz ]c
 nnoremap [[ :diffget<CR>
 nnoremap ]] :diffput<CR>
+
+map <C-f> *<BAR>:execute "vimgrep /" . expand("<cword>") ."/j %" <Bar> cw<CR>
+map <C-h> *<BAR>:execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>

@@ -26,3 +26,4 @@ parse_svn_repository_root() {
 
 export PS1="\[\033[01;30m\]\u@\h\[\033[01;00m\] \w \[\033[01;36m\]\$(parse_git_branch)\$(parse_svn_branch)\n \[\033[01;00m\]•\[\033[01;00m\] "
 
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
