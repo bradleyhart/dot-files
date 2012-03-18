@@ -102,10 +102,13 @@ imap <C-l> <ESC><C-l>
 "nnoremap <F5> gg=G
 
 " Move windows with arrows
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nmap <Space> <C-w>w
+nmap qq :q<CR>
+nmap ww :w<CR>
+"nmap <silent> <A-Up> :wincmd k<CR>
+"nmap <silent> <A-Down> :wincmd j<CR>
+"nmap <silent> <A-Left> :wincmd h<CR>
+"nmap <silent> <A-Right> :wincmd l<CR>
 
 " YankRing
 nmap <leader>p :YRShow<CR>
