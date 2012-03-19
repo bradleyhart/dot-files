@@ -99,7 +99,6 @@ map <C-c> <leader>c<space>
 " Format the file
 nnoremap <C-l> mtgg=G't
 imap <C-l> <ESC><C-l>
-"nnoremap <F5> gg=G
 
 " Move windows with arrows
 nmap <Space> <C-w>w
@@ -145,5 +144,39 @@ nnoremap zz ]c
 nnoremap -- :diffget<CR>
 nnoremap == :diffput<CR>
 
-map <C-f> *<BAR>:execute "vimgrep /" . expand("<cword>") ."/j %" <Bar> cw<CR>
-map <C-h> *<BAR>:execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+
+
+"make * and # work on visual mode too.
+function! s:VSetSearch()
+  let temp = @@
+  norm! gvy
+  let @/ = '\V' . substitute(escape(@@, '\'), '\n', '\\n', 'g')
+  let @@ = temp
+endfunction
+
+vmap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
+vmap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
+
+nmap <C-f> :execute 'noautocmd vimgrep /\V' . substitute(escape(expand("<cword>"), '\'), '\n', '\\n', 'g') . '/j %' <BAR>cw<CR>
+vmap <C-f> :<C-u>call <SID>VSetSearch()<CR>:execute 'noautocmd vimgrep /' . @/ . '/j %' <BAR>cw<CR>
+
+nmap <C-g> :execute 'noautocmd vimgrep /\V' . substitute(escape(expand("<cword>"), '\'), '\n', '\\n', 'g') . '/j **' <BAR>cw<CR>
+vmap <C-g> :<C-u>call <SID>VSetSearch()<CR>:execute 'noautocmd vimgrep /' . @/ . '/j **' <BAR>cw<CR>
+
+" <C-f> *<BAR>:execute "vimgrep /" . expand("<cword>") ."/j %" <Bar> cw<CR>
+"map <C-h> *<BAR>:execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+
+if !has("gui_running")
+  inoremap <C-@> <C-x><C-o>
+endif
+
+" supertab + eclim == java win
+let g:SuperTabDefaultCompletionTypeDiscovery = [
+      \ "&completefunc:<c-x><c-u>",
+      \ "&omnifunc:<c-x><c-o>",
+      \ ]
+let g:SuperTabLongestHighlight = 1
+
+if has("autocmd") 
+  autocmd Filetype java setlocal omnifunc=javacomplete#Complete 
+endif 
